@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ListOfBooks>
+  <Book>
+    <Title FontSize ="8">CLR via C# Рихтер</Title>
+    <Price>999</Price>
+  </Book>
+  <Book>
+    <Title FontSize ="10">C# Language Troelsen</Title>
+    <Price>900</Price>
+  </Book>
+  <Book>
+    <Title FontSize ="10">Language C# Shildt</Title>
+    <Price>799</Price>
+  </Book>
+</ListOfBooks>
