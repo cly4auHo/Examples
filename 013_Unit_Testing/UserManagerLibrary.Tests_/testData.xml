@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserDetails>
+  <User userid="Dmitriy" telephone="+38 000 123 23 42" email="dmitriy@itvdn.com"/>
+  <User userid="Ivan" telephone="+38 000 123 23 42" email="ivanitvdn.com"/>
+</UserDetails>

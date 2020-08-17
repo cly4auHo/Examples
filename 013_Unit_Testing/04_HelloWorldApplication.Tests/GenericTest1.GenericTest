@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GenericTest name="GenericTest1" storage="e:\itea - продвинутый курс по с#\016_unit-тестирование\016_unit_testing\04_helloworldapplication.tests\generictest1.generictest" id="d1fa4408-985d-4da7-a9c4-4eb41c8e89b3" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Command filename="D:\Lessons\Unit Test Fundamentals Video\001 Introduction\007_AdditionalFeatures\HelloWorldApplication\bin\Debug\HelloWorldApplication.exe" arguments="&quot;Hello world&quot;" workingDirectory="%TestOutputDirectory%" />
+  <SummaryXmlFile path="%TestOutputDirectory%\&lt;Введите имя файла сводки&gt;" />
+</GenericTest>
