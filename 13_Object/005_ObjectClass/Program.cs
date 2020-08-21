@@ -1,0 +1,66 @@
+﻿using System;
+
+/// <summary>
+/// Базовый класс Object.
+/// Правило: Переопределяйте GetHashCode переопределяя Equals.
+/// </summary>
+namespace _005_ObjectClass
+{
+    class Program
+    {
+        static void Main()
+        {
+            Point a = new Point(1, 2);
+            Point b = new Point(1, 2);
+            Point c = new Point(0, 0);
+
+            Console.WriteLine("a == b : {0}", a.Equals(b));
+            Console.WriteLine("a == c : {0}", a.Equals(c));
+
+            // Задержка.
+            Console.ReadKey();
+        }
+    }
+
+    /// <summary>
+    /// Класс Point
+    /// </summary>
+    class Point : object
+    {
+        protected int x;
+        protected int y;
+
+        /// <summary>
+        /// Конструктор
+        /// </summary>
+        public Point(int xValue, int yValue)
+        {
+            x = xValue;
+            y = yValue;
+        }
+
+        /// <summary>
+        /// Переопределение Equals
+        /// По умолчанию, этот метод ведёт себя точно также как ReferenceEquals. 
+        /// Однако для значимых типов он переопределён и в System.ValueType.
+        /// </summary>
+        public override bool Equals(Object obj)
+        {
+            if (obj == null || this.GetType() != obj.GetType())
+                return false;
+            
+            Point p = (Point)obj;
+            
+            return (x == p.x) && (y == p.y);
+        }
+
+        /// <summary>
+        /// Переопределение GetHashCode
+        /// </summary>
+        public override int GetHashCode()
+        {
+            // исключающее или 
+            return x ^ y;
+        }
+    }
+}
